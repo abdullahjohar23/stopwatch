@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body class="bg-slate-800">
+        <!--
+            Run "npm run dev" in termial to run tailwind
+        -->
+
+        <div class="flex items-center justify-center text-white min-h-screen text-xl">
+            <div class="flex flex-col gap-4 border rounded-lg p-8">
+                <span class="text-center text-3xl">Stopwatch</span>
+
+                <div class="flex items-center gap-3">
+                    <div id="show-minute" class="rounded bg-slate-800 border p-2 text-center w-28">00</div>
+                    :
+                    <div id="show-second" class="rounded bg-slate-800 border p-2 text-center w-28">00</div>
+                </div>
+
+                <button id="start-button"  class="bg-green-900  p-2 rounded hover:bg-green-600">Start</button>
+                <button id="pause-button"  class="bg-orange-500 p-2 rounded hidden">Pause</button>
+                <button id="resume-button" class="bg-green-500 p-2 rounded hidden">Resume</button>
+                <button id="stop-button"   class="bg-red-700    p-2 rounded hidden">Stop</button>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html
